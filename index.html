@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVision - Halaman Utama</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>TechVision</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="profile.html">Profil Kami</a></li>
+                <li><a href="#contact">Hubungi Kami</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section dengan Ucapan Selamat Datang -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 id="greeting">Halo!</h2>
+            <p>Selamat datang di TechVision - Solusi Teknologi Masa Depan</p>
+            <button class="btn-primary" onclick="showNamePrompt()">Kenalkan Diri Anda</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>TechVision adalah perusahaan teknologi yang berdedikasi untuk memberikan solusi inovatif dan berkualitas tinggi. Kami percaya bahwa teknologi dapat mengubah dunia menjadi lebih baik.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Pengembangan Web</h3>
+                    <p>Membuat website modern dan responsif untuk bisnis Anda</p>
+                </div>
+                <div class="service-card">
+                    <h3>Aplikasi Mobile</h3>
+                    <p>Mengembangkan aplikasi mobile iOS dan Android</p>
+                </div>
+                <div class="service-card">
+                    <h3>Konsultasi IT</h3>
+                    <p>Memberikan solusi teknologi terbaik untuk perusahaan Anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+            <div id="formResult" class="form-result"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 TechVision. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

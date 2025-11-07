@@ -253,15 +253,16 @@ body {
 /* Profile Page Styles */
 .profile-banner {
     background: linear-gradient(rgba(0, 81, 165, 0.7), rgba(0, 81, 165, 0.7)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23ffcc00" width="1200" height="600"/></svg>');
+                url(../images/annie-spratt-hCb3lIB8L8E-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
+    position: relative;
 }
 
 .banner-overlay h1 {
